@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA - CBTIS 222</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a2e;
+            color: #fff;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: #16213e;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            border: 2px solid #00d4ff;
+        }
+        
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #ff006e;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background: #16213e;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid #00d4ff;
+        }
+        
+        .card:nth-child(2) { border-left-color: #ff006e; }
+        .card:nth-child(3) { border-left-color: #00ff88; }
+        .card:nth-child(4) { border-left-color: #ffd000; }
+        
+        h2 {
+            color: #00d4ff;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+        
+        .card:nth-child(2) h2 { color: #ff006e; }
+        .card:nth-child(3) h2 { color: #00ff88; }
+        .card:nth-child(4) h2 { color: #ffd000; }
+        
+        p {
+            line-height: 1.7;
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            padding: 10px 0;
+            color: #ccc;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #00d4ff;
+        }
+        
+        .info-box {
+            background: #0f1626;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .info-box p {
+            margin: 8px 0;
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #00d4ff;
+            color: #1a1a2e;
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .full {
+            grid-column: 1 / -1;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: #16213e;
+            border-radius: 12px;
+            color: #00d4ff;
+        }
+        
+        strong {
+            color: #00d4ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="tu-logo.png" alt="Logo CBTIS 222" class="logo">
+            <h1>INTELIGENCIA ARTIFICIAL</h1>
+            <p class="subtitle">CBTIS 222</p>
+        </header>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>⚡ La Carrera</h2>
+                <p>Prepárate para el futuro con nuestra carrera de Inteligencia Artificial, donde aprenderás a crear tecnología que transforma el mundo.</p>
+                <div class="info-box">
+                    <p><strong>Duración:</strong> 3 años</p>
+                    <p><strong>Modalidad:</strong> Presencial</p>
+                    <p><strong>Turnos:</strong> Matutino y Vespertino</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>🎯 Aprenderás</h2>
+                <ul>
+                    <li>Programación y Algoritmos</li>
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>Procesamiento de Lenguaje</li>
+                    <li>Visión por Computadora</li>
+                    <li>Desarrollo de Chatbots</li>
+                    <li>Análisis de Datos</li>
+                    <li>Redes Neuronales</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>🏫 CBTIS 222</h2>
+                <ul>
+                    <li>Laboratorios modernos</li>
+                    <li>Profesores certificados</li>
+                    <li>Convenios con empresas</li>
+                    <li>Proyectos reales</li>
+                    <li>Competencias nacionales</li>
+                    <li>Talleres especializados</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>💎 Ventajas</h2>
+                <span class="tag">Alta Demanda</span>
+                <span class="tag">Buenos Salarios</span>
+                <span class="tag">Trabajo Remoto</span>
+                <span class="tag">Oportunidades Globales</span>
+                <span class="tag">Tecnología Avanzada</span>
+            </div>
+            
+            <div class="card full">
+                <h2>🚀 Campo Laboral</h2>
+                <p>Trabaja en empresas de software, startups tecnológicas, sector financiero, salud, automotriz, e-commerce, o como desarrollador independiente.</p>
+            </div>
+            
+            <div class="card full">
+                <h2>🎨 Proyectos y Certificaciones</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                    <div>
+                        <h3 style="color: #00d4ff; margin-bottom: 15px;">Proyectos</h3>
+                        <ul>
+                            <li>Chatbots Inteligentes</li>
+                            <li>Reconocimiento Facial</li>
+                            <li>Análisis Predictivo</li>
+                            <li>Asistentes Virtuales</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: #ff006e; margin-bottom: 15px;">Certificaciones</h3>
+                        <ul>
+                            <li>Python para Data Science</li>
+                            <li>Machine Learning</li>
+                            <li>Cloud Computing</li>
+                            <li>Desarrollo con IA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>CBTIS 222 - Inteligencia Artificial</p>
+            <p>Tu futuro empieza aquí</p>
+        </footer>
+    </div>
+</body>
+</html>
